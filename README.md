@@ -3,21 +3,17 @@
 
 
 	Event.on('process',function(argvs){
-		// callback
+		// callback(argvs)
 	});
 
 	Event.trigger('process',argvs);
 
-	Event.off('process');
+	Event.off('process',function(){
+		// callback
+	});
 
 	Event.one('process',function(argvs){
-		// callback
+		// callback(argvs)
 	});
 
-	// namesapce
-	Event.create('namespace1').on('load',function(argvs){
-		// callback
-	});
-	Event.create('namespace2').on('load',function(argvs){
-		// callback
-	});
+	
