@@ -8,9 +8,7 @@
 (function(global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.Event = factory();
 })(this, function() {
-
     var e = {};
-
     var _each = function(arr, fn) {
         var ret;
         for (var i = 0; i < arr.length; i++) {

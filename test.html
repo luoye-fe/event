@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+	<button id="a">a</button>
+	<button id="b">b</button>
+	<button id="c">c</button>
+	<button id="d">d</button>
+
+
+	<script type="text/javascript" src="./event.js"></script>
+	<script type="text/javascript">
+
+	Event.on('change',function(msg){
+		console.log(msg);
+	})
+
+
+
+	var a = document.getElementById('a');
+	var b = document.getElementById('b');
+	var c = document.getElementById('c');
+	var d = document.getElementById('d');
+
+	a.onclick = function(){
+		Event.trigger('change','a')
+	}
+
+	b.onclick = function(){
+		Event.trigger('change','b')
+	}
+
+
+	c.onclick = function(){
+		Event.trigger('change','c')
+	}
+
+
+	d.onclick = function(){
+		Event.trigger('change','d')
+	}
+
+
+
+
+	</script>
+</body>
+</html>
