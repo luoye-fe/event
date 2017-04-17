@@ -1,19 +1,4 @@
-#Event include on/trigger/one/off
+event
+--------------------------------
 
-
-
-	Event.on('process',function(argvs){
-		// callback(argvs)
-	});
-
-	Event.trigger('process',argvs);
-
-	Event.off('process',function(){
-		// callback
-	});
-
-	Event.one('process',function(argvs){
-		// callback(argvs)
-	});
-
-	
+NOTE: use `yarn` to install node_modules.
